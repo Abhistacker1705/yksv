@@ -2,21 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--w: Min(10em, 100%);
-}
-
 @keyframes slideUp {
 	from {
 		transform: translateY(100%);
 		opacity: 0;
 	}
 	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes slideDown {
+	from {
 		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
 		opacity: 1;
 	}
 }
 
 .slide-up {
 	animation: slideUp 1.5s ease forwards;
+}
+
+.slide-down {
+	animation: slideDown 1.5s ease forwards;
+	animation-delay: 1.5s;
 }

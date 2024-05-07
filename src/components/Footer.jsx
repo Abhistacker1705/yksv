@@ -110,7 +110,9 @@ const SocialMedias = () => {
 	];
 
 	return (
-		<div className="flex items-center gap-4">
+		<div
+			id="connect-with-us"
+			className="flex items-center gap-4">
 			{IconMap.map((component, index) => (
 				<React.Fragment key={index}>{component}</React.Fragment>
 			))}
