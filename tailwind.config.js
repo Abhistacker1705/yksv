@@ -28,7 +28,6 @@ module.exports = {
 				inter: ['var(--font-inter)', ...fontFamily.sans],
 				poppins: ['var(--font-poppins)', ...fontFamily.sans],
 				jost: ['var(--font-jost)', ...fontFamily.sans],
-				mal: ['var(--font-mal)', ...fontFamily.sans],
 			},
 			boxShadow: {
 				input: '2px 2px 12px 0px rgba(0, 0, 0, 0.06)',

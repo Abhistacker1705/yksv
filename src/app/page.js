@@ -1,18 +1,15 @@
-import BeforeAfterComparison from '@/components/BeforeAfter';
-
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import MediaSection from '@/components/MediaSection';
 import Navbar from '@/components/Navbar';
+import MissionVisionSection from '@/components/MissionVision';
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col">
-			<div className="bg-hero">
-				<Navbar />
-				<HeroSection />
-			</div>
-			<BeforeAfterComparison />
+		<main className="flex flex-col min-h-screen">
+			<Navbar />
+			<HeroSection />
+			<MissionVisionSection />
 			<MediaSection />
 			<Footer />
 		</main>
